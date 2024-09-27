@@ -1,13 +1,4 @@
-const {Pool} = require('pg')
-const pool = new Pool ({
-  user: 'postgres',           
-  host: 'localhost',             
-  database: 'postgres', 
-  password: 'lore1234',    
-  port: 5432,                   
-})
-
-
+// Se realiza el "pool" a la base de datos, pero no se deja esta parte del código porque contiene información de usuario y contraseña
 function serverConnection() {
   pool.connect((err, client, release) => {
     if (err) {
